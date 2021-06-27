@@ -8,6 +8,8 @@
 #define FOLDER_ROBOCZY "../datasets/"
 #define TRASA_PRZELOTU "../datasets/trasa_przelotu.dat"
 
+
+
 bool Scena::wybierz_drona(int numer_drona, PzG::LaczeDoGNUPlota &Lacze)
 {
   if (numer_drona < 0)
@@ -80,9 +82,9 @@ bool Scena::Uzyj_drona(int numer_drona, double kat, unsigned int odleglosc, PzG:
     return false;
   Lacze.Rysuj();
 
-  kolizja=Drony[numer_drona].LotDrona(kat, 50, odleglosc, numer_drona,Przeszkody, Lacze)
+  kolizja=Drony[numer_drona].LotDrona(kat, 50, odleglosc, numer_drona,Przeszkody, Lacze);
 
-  if (kolizja==false))
+  if (kolizja==false)
     return false;
   return true;
 }
@@ -161,6 +163,7 @@ void Scena::Usun_Przeszkody(PzG::LaczeDoGNUPlota &Lacze)
   Przeszkody.remove(ptr_przeszkody.front());
   Lacze.UsunNazwePliku(ptr_przeszkody.front().get()->dajNazweWyjsciowego());
   Lacze.Rysuj();
+  remove(ptr_przeszkody.front().get()->dajNazweWyjsciowego().c_str());
 }
 
 int Scena::Menu(PzG::LaczeDoGNUPlota &Lacze)

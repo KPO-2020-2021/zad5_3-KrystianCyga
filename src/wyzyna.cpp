@@ -3,6 +3,7 @@
 #define WZORZEC_STOZEK "../BrylyWzorcowe/szescianUP.dat"
 #define FOLDER_ROBOCZY "../datasets/"
 
+int nr=0;
 
 void wyzyna::InfoObiektu()
 {
@@ -12,7 +13,7 @@ std::cout << "Pozycja wyzyny: " << daj_trans() << std::endl;
 bool wyzyna::ZbudujWyzyne(){
   
   std::string PlikWyjsciowy;
-  PlikWyjsciowy = "../BrylyWzorcowe/Wyzyna_" + std::to_string(NumerBryly) + ".dat";
+  PlikWyjsciowy = "../BrylyWzorcowe/Wyzyna_" + std::to_string(nr) + ".dat";
   pobierz_nazwe_final(PlikWyjsciowy);
   pobierz_nazwe_wzorca(WZORZEC_STOZEK);
   std::ifstream IN(daj_wzorcowego());
@@ -55,5 +56,6 @@ bool wyzyna::ZbudujWyzyne(){
     }
     OUT << std::endl;
   }
+  nr++;
   return !OUT.fail();
 }

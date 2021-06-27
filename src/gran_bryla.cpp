@@ -3,7 +3,7 @@
 #define WZORZEC_STOZEK "../BrylyWzorcowe/szescianUP.dat"
 #define WZORZEC_SZESCIAN "../BrylyWzorcowe/szescian.dat"
 #define FOLDER_ROBOCZY "../datasets/"
-
+int nr=0;
 
 void gran_bryla::InfoObiektu()
 {
@@ -13,7 +13,7 @@ void gran_bryla::InfoObiektu()
 bool gran_bryla::Tworz_gran_bryla(){
 
   std::string PlikWyjsciowy;
-  PlikWyjsciowy = "../BrylyWzorcowe/gran_bryla_" + std::to_string(NumerBryly) + ".dat";
+  PlikWyjsciowy = "../BrylyWzorcowe/gran_bryla_" + std::to_string(nr) + ".dat";
   pobierz_nazwe_final(PlikWyjsciowy);
   pobierz_nazwe_wzorca(WZORZEC_STOZEK);
   std::ifstream IN(daj_wzorcowego());
@@ -56,5 +56,6 @@ bool gran_bryla::Tworz_gran_bryla(){
     }
     OUT << std::endl;
   }
+  nr++;
   return !OUT.fail();
 }

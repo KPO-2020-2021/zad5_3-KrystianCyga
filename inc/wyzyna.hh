@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../inc/brylageo.hh"
+#include "brylageo.hh"
 
 /*!
  * \file
@@ -25,7 +25,7 @@ public:
     wyzyna(PzG::LaczeDoGNUPlota &Lacze, vector3d polozenie, double kat_orien, vector3d Skala) : brylageo(polozenie, kat_orien, Skala)
     {
         ZbudujWyzyne();
-        NazwaWyjsciowego = dajNazweWyjsciowego();
+        NazwaWyjsciowego = daj_wyjsciowego();
         const char *ptrNazwa = NazwaWyjsciowego.c_str();
         Lacze.DodajNazwePliku(ptrNazwa);
         ++NumerBryly;

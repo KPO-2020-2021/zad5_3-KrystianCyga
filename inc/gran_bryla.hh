@@ -25,7 +25,7 @@ public:
   gran_bryla(PzG::LaczeDoGNUPlota &Lacze, vector3d polozenie, double kat_orien, vector3d Skala) : brylageo(polozenie, kat_orien, Skala)
   {
         Tworz_gran_bryla();
-        NazwaWyjsciowego = dajNazweWyjsciowego();
+        NazwaWyjsciowego = daj_wyjsciowego();
         const char *ptrNazwa = NazwaWyjsciowego.c_str();
         Lacze.DodajNazwePliku(ptrNazwa);
         ++NumerBryly;

@@ -2,6 +2,8 @@
 #define WZORZEC_STOZEK "../BrylyWzorcowe/szescianUP.dat"
 #define FOLDER_ROBOCZY "../datasets/"
 
+int nr=0;
+
 void stozek::InfoObiektu()
 {
     std::cout << "Pozycja Gory z ostrym szczytem:" << daj_trans() << std::endl;
@@ -10,7 +12,7 @@ void stozek::InfoObiektu()
 bool stozek::Zbudujstozek()
 {
     std::string NazwaPlikuWyjsciowego;
-    NazwaPlikuWyjsciowego = "../BrylyWzorcowe/Gora_" + std::to_string(NumerBryly) + ".dat";
+    NazwaPlikuWyjsciowego = "../BrylyWzorcowe/Gora_" + std::to_string(nr) + ".dat";
     pobierz_nazwe_final(NazwaPlikuWyjsciowego);
     pobierz_nazwe_wzorca(WZORZEC_STOZEK);
 
@@ -56,6 +58,7 @@ bool stozek::Zbudujstozek()
         }
         OUT << std::endl;
     }
+    nr++;
 
     return !OUT.fail();
 }

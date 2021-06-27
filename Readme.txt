@@ -24,3 +24,5 @@ Dokumentacja- opisy klas, plikow,metod,funkcji zostaly poprawnie wykonane.
 
 Nie wiem czy wszystkie dokumenty sie dobrze wygenerowaly.
 
+KOLIZJA OBIEKTOW DODANA.
+
