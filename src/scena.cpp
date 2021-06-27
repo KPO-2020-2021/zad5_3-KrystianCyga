@@ -10,7 +10,8 @@
 
 bool Scena::wybierz_drona(int numer_drona, PzG::LaczeDoGNUPlota &Lacze)
 {
-  if (numer_drona < 0) return false;
+  if (numer_drona < 0)
+    return false;
 
   double Kat;
   int odleglosc;
@@ -22,9 +23,16 @@ bool Scena::wybierz_drona(int numer_drona, PzG::LaczeDoGNUPlota &Lacze)
   std::cin >> odleglosc;
   std::cout << std::endl;
 
-
-if (!Uzyj_drona(numer_drona, Kat, odleglosc, Lacze))
+  if (!Uzyj_drona(numer_drona, Kat, odleglosc, Lacze))
     return false;
+
+  if ((kolizja == 2))
+  {
+    std::cout << "Brak miejsca do lądowania - leć gdzieś indziej." << std::endl;
+    if (!wybierz_drona(numer_drona, Lacze))
+      return false;
+  }
+
   return true;
 }
 
@@ -32,46 +40,51 @@ bool Scena::Zapis_drona(unsigned int numer_drona, vector3d &polozenie)
 {
   Dron newDron;
   std::shared_ptr<Dron> ptrDron = std::make_shared<Dron>();
-
-  ptrDron->Ustaw_polozenie(polozenie);
-  newDron.Ustaw_polozenie(polozenie);
   ptrDron->Ustaw_kat(0);
-  newDron.Ustaw_kat(0);
-  Drony.push_back(newDron);
+  ptrDron->Ustaw_polozenie(polozenie);
+  ptrDron->ZbudujDrona();
+  ptrDron->owektor(numer_drona);
+
   Drony[numer_drona].ZbudujDrona();
+  Drony.push_back(newDron);
+
+  newDron.Ustaw_polozenie(polozenie);
+  newDron.Ustaw_kat(0);
+  newDron.ZbudujDrona();
+  newDron.owektor(numer_drona);
+
   Przeszkody.push_back(ptrDron);
 
-  if (!Drony[numer_drona].owektor(numer_drona))
-    return false;
   return true;
 }
 
 bool Scena::Uzyj_drona(int numer_drona, double kat, unsigned int odleglosc, PzG::LaczeDoGNUPlota &Lacze)
 {
-  
-    std::string wlasciwy = FOLDER_WLASCIWY;
-    std::string roboczy = FOLDER_ROBOCZY;
-    for (unsigned int index = 0; index < liczba_dronow; ++index)
+
+  std::string wlasciwy = FOLDER_WLASCIWY;
+  std::string roboczy = FOLDER_ROBOCZY;
+  for (unsigned int index = 0; index < liczba_dronow; ++index)
+  {
+    std::string sciezka_korpusu = wlasciwy + "Dron_" + std::to_string(index) + "_Korpus_.dat";
+    const char *ptr_sciezka_korpusu = sciezka_korpusu.c_str();
+    Lacze.DodajNazwePliku(ptr_sciezka_korpusu);
+    for (unsigned int numer_rotora = 0; numer_rotora < 4; ++numer_rotora)
     {
-      std::string sciezka_korpusu = wlasciwy + "Dron_" + std::to_string(index) + "_Korpus_.dat";
-      const char *ptr_sciezka_korpusu = sciezka_korpusu.c_str();
-      Lacze.DodajNazwePliku(ptr_sciezka_korpusu);
-      for (unsigned int numer_rotora = 0; numer_rotora < 4; ++numer_rotora)
-      {
-        std::string sciezka_rotora = wlasciwy + "Dron_" + std::to_string(index) + "_Rotor_" + std::to_string(numer_drona) + ".dat";
-        const char *ptr_sciezka_rotora = sciezka_rotora.c_str();
-        Lacze.DodajNazwePliku(ptr_sciezka_rotora);
-      }
+      std::string sciezka_rotora = wlasciwy + "Dron_" + std::to_string(index) + "_Rotor_" + std::to_string(numer_drona) + ".dat";
+      const char *ptr_sciezka_rotora = sciezka_rotora.c_str();
+      Lacze.DodajNazwePliku(ptr_sciezka_rotora);
     }
+  }
 
-    if (!Drony[numer_drona].owektor(numer_drona))
-      return false;
-    Lacze.Rysuj();
+  if (!Drony[numer_drona].owektor(numer_drona))
+    return false;
+  Lacze.Rysuj();
 
-    if (!Drony[numer_drona].LotDrona(kat, 50, odleglosc, numer_drona, Lacze))
-      return false;
-    return true;
-  
+  kolizja=Drony[numer_drona].LotDrona(kat, 50, odleglosc, numer_drona,Przeszkody, Lacze)
+
+  if (kolizja==false))
+    return false;
+  return true;
 }
 
 void Scena::Dodaj_Przeszkody(PzG::LaczeDoGNUPlota &Lacze)
@@ -111,10 +124,10 @@ void Scena::Dodaj_Przeszkody(PzG::LaczeDoGNUPlota &Lacze)
     std::cout << "Wybrales bledna opcje - sprobuj jeszcze raz" << std::endl;
     break;
   }
- 
+
   Przeszkody.push_front(ptr_bryla);
   std::string nazwa = ptr_bryla.get()->daj_wyjsciowego();
-  const char *sciezka= nazwa.c_str();
+  const char *sciezka = nazwa.c_str();
   Lacze.DodajNazwePliku(sciezka);
   Lacze.Rysuj();
 }
@@ -206,7 +219,8 @@ int Scena::Menu(PzG::LaczeDoGNUPlota &Lacze)
                 << "4. Dodaj przeszkode w postaci figury" << std::endl
                 << "5. Usuń przeszkode" << std::endl
                 << "6. Menu programu" << std::endl
-                << "7. Zakoncz program" << std::endl<< std::endl;
+                << "7. Zakoncz program" << std::endl
+                << std::endl;
     }
     std::cin >> wybor;
     switch (wybor)
@@ -214,7 +228,9 @@ int Scena::Menu(PzG::LaczeDoGNUPlota &Lacze)
     case ('1'):
       std::cout << std::endl
                 << "Podaj wspolrzedne startowe drona:" << std::endl
-                << std::endl;std::cin >> PolozenieStart;std::cout << std::endl;
+                << std::endl;
+      std::cin >> PolozenieStart;
+      std::cout << std::endl;
       Zapis_drona(numer_drona, PolozenieStart);
       ++liczba_dronow;
       numer_drona = liczba_dronow;
@@ -254,18 +270,18 @@ int Scena::Menu(PzG::LaczeDoGNUPlota &Lacze)
       Usun_Przeszkody(Lacze);
       break;
     case ('6'):
-       std::cout << "Wybierz opcje:" << std::endl
+      std::cout << "Wybierz opcje:" << std::endl
                 << "1. Dodaj drona" << std::endl
                 << "2. Wyswietl liste dostepnych dronow" << std::endl
                 << "3. Przejdz do ustawienia trasy" << std::endl
                 << "4. Dodaj przeszkode w postaci figury" << std::endl
                 << "5. Usuń przeszkode" << std::endl
                 << "6. Menu programu" << std::endl
-                << "7. Zakoncz program" << std::endl<< std::endl;
+                << "7. Zakoncz program" << std::endl
+                << std::endl;
       break;
     case ('7'):
-        std::cout << "Zakonczono dzialanie programu." << std::endl;
-      
+      std::cout << "Zakonczono dzialanie programu." << std::endl;
 
       return -1;
       break;
@@ -273,7 +289,8 @@ int Scena::Menu(PzG::LaczeDoGNUPlota &Lacze)
       std::cout << "Wybrales bledna opcje - sprobuj jeszcze raz" << std::endl;
       break;
     }
-    std::cout << std::endl<< "Wcisnij 6 aby wyświetlic menu."<< std::endl;
+    std::cout << std::endl
+              << "Wcisnij 6 aby wyświetlic menu." << std::endl;
   }
   return -1;
 }

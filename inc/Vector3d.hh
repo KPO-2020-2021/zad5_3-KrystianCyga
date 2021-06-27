@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../inc/vector.hh"
+#include "vector.hh"
 
 /*!
  * \file

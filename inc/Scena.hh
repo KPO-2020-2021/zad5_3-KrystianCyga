@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../inc/stozek.hh"
-#include "../inc/wyzyna.hh"
-#include "../inc/gran_bryla.hh"
-#include "../inc/dron.hh"
-#include "../inc/Obiekt.hh"
-#include "../inc/brylageo.hh"
+#include "stozek.hh"
+#include "wyzyna.hh"
+#include "gran_bryla.hh"
+#include "dron.hh"
+#include "Obiekt.hh"
+#include "brylageo.hh"
 
 #include <string>
 #include <list>
@@ -24,6 +24,8 @@ class Scena
   std::list<std::shared_ptr<Obiekt>> Przeszkody;
 
   unsigned int liczba_dronow = 0;
+
+  int kolizja;
 
 public:
 /*!
@@ -78,4 +80,6 @@ public:
  * \param[in] Lacze - Lacze do GNUplota
  */
   void Usun_Przeszkody(PzG::LaczeDoGNUPlota &Lacze);
+
+  std::list<std::shared_ptr<Obiekt>> DajPrzeszkody() {return Przeszkody;}
 };
