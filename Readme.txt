@@ -24,5 +24,5 @@ Dokumentacja- opisy klas, plikow,metod,funkcji zostaly poprawnie wykonane.
 
 Nie wiem czy wszystkie dokumenty sie dobrze wygenerowaly.
 
-KOLIZJA OBIEKTOW DODANA.
+KOLIZJA OBIEKTOW DODANA. Jednak gnuplot wariuje i czesto nie rysuje przeszkod.
 
