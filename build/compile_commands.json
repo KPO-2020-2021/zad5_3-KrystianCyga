@@ -1,27 +1,67 @@
 [
 {
-  "directory": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/app/main.cpp",
-  "file": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/app/main.cpp"
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/app/main.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/app/main.cpp"
 },
 {
-  "directory": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/example.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/example.cpp",
-  "file": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/example.cpp"
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/example.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/example.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/example.cpp"
 },
 {
-  "directory": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/lacze_do_gnuplota.cpp",
-  "file": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/lacze_do_gnuplota.cpp"
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp"
 },
 {
-  "directory": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/tests",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/main.cpp",
-  "file": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/main.cpp"
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/brylageo.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp"
 },
 {
-  "directory": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/tests",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/dummy.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/dummy.cpp",
-  "file": "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/dummy.cpp"
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/prostopadloscian.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/graniastoslup.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/dron.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/dron.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/dron.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/stozek.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/stozek.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/stozek.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/gran_bryla.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/gran_bryla.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/gran_bryla.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/wyzyna.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/wyzyna.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/wyzyna.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/scena.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/scena.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/scena.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/main.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/main.cpp"
+},
+{
+  "directory": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc -I/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/dummy.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/dummy.cpp",
+  "file": "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/dummy.cpp"
 }
 ]

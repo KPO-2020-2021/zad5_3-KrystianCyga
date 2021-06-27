@@ -10,7 +10,7 @@
 ../tests/doctest/doctest.h
 ../tests/doctest/doctest.h
 
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/doctest/doctest.h
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/doctest/doctest.h
 signal.h
 -
 iosfwd
@@ -24,7 +24,7 @@ ciso646
 type_traits
 -
 doctest_fwd.h
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/doctest/doctest_fwd.h
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/doctest/doctest_fwd.h
 ctime
 -
 cmath
@@ -94,15 +94,15 @@ sys/time.h
 unistd.h
 -
 
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/dummy.cpp
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/dummy.cpp
 ../tests/doctest/doctest.h
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/doctest/doctest.h
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/doctest/doctest.h
 example.h
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/example.h
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/example.h
 
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/main.cpp
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/main.cpp
 ../tests/doctest/doctest.h
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/doctest/doctest.h
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/doctest/doctest.h
 dummy.cpp
-/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/dummy.cpp
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/dummy.cpp
 

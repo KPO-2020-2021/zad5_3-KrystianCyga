@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga
+CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build
+CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/app/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/app/main.cpp.o: ../app/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/app/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/app/main.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/app/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/app/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/app/main.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/app/main.cpp
 
 CMakeFiles/main.dir/app/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/app/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/app/main.cpp > CMakeFiles/main.dir/app/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/app/main.cpp > CMakeFiles/main.dir/app/main.cpp.i
 
 CMakeFiles/main.dir/app/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/app/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/app/main.cpp -o CMakeFiles/main.dir/app/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/app/main.cpp -o CMakeFiles/main.dir/app/main.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -76,15 +76,31 @@ main_OBJECTS = \
 
 # External object files for target main
 main_EXTERNAL_OBJECTS = \
-"/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/program.dir/src/example.cpp.o" \
-"/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/example.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/brylageo.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/prostopadloscian.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/graniastoslup.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/dron.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/stozek.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/gran_bryla.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/wyzyna.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/scena.cpp.o"
 
 main: CMakeFiles/main.dir/app/main.cpp.o
 main: CMakeFiles/program.dir/src/example.cpp.o
 main: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
+main: CMakeFiles/program.dir/src/brylageo.cpp.o
+main: CMakeFiles/program.dir/src/prostopadloscian.cpp.o
+main: CMakeFiles/program.dir/src/graniastoslup.cpp.o
+main: CMakeFiles/program.dir/src/dron.cpp.o
+main: CMakeFiles/program.dir/src/stozek.cpp.o
+main: CMakeFiles/program.dir/src/gran_bryla.cpp.o
+main: CMakeFiles/program.dir/src/wyzyna.cpp.o
+main: CMakeFiles/program.dir/src/scena.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -97,6 +113,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krystian/Documents/objektowo/zad5_3-KrystianCyga /home/krystian/Documents/objektowo/zad5_3-KrystianCyga /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krystian/Documents/objektowo/zad5_2-KrystianCyga /home/krystian/Documents/objektowo/zad5_2-KrystianCyga /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

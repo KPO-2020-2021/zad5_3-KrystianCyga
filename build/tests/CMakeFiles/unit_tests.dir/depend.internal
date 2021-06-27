@@ -3,10 +3,10 @@
 
 tests/CMakeFiles/unit_tests.dir/dummy.cpp.o
  ../inc/example.h
- /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/doctest/doctest.h
- /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/dummy.cpp
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/doctest/doctest.h
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/dummy.cpp
 tests/CMakeFiles/unit_tests.dir/main.cpp.o
  ../inc/example.h
- /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/doctest/doctest.h
- /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/dummy.cpp
- /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests/main.cpp
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/doctest/doctest.h
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/dummy.cpp
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/main.cpp

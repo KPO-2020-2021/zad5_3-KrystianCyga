@@ -1,4 +1,4 @@
-# Install script for directory: /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/_CMakeLTOTest-CXX/src
+# Install script for directory: /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/_CMakeLTOTest-CXX/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/_CMakeLTOTest-CXX/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/_CMakeLTOTest-CXX/bin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

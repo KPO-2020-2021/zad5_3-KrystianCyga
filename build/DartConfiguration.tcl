@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/krystian/Documents/objektowo/zad5_3-KrystianCyga
-BuildDirectory: /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build
+SourceDirectory: /home/krystian/Documents/objektowo/zad5_2-KrystianCyga
+BuildDirectory: /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/krystian/Documents/objektowo/zad5_3-KrystianCyga"
+ConfigureCommand: "/usr/bin/cmake" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

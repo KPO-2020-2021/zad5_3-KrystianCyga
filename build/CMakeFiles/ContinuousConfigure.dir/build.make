@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga
+CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build
+CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build
 
 # Utility rule file for ContinuousConfigure.
 
@@ -71,6 +71,6 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 .PHONY : CMakeFiles/ContinuousConfigure.dir/clean
 
 CMakeFiles/ContinuousConfigure.dir/depend:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krystian/Documents/objektowo/zad5_3-KrystianCyga /home/krystian/Documents/objektowo/zad5_3-KrystianCyga /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krystian/Documents/objektowo/zad5_2-KrystianCyga /home/krystian/Documents/objektowo/zad5_2-KrystianCyga /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousConfigure.dir/depend
 

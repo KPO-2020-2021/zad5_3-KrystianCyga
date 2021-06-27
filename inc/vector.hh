@@ -1,137 +1,197 @@
 #pragma once
 
-#include "size.hh"
 #include <iostream>
+#include <iostream>
+#include <stdexcept>
+#include <math.h>
+#include <cassert>
+#include <initializer_list>
+#include <unistd.h>
+#include <iomanip>
+#include <vector>
+#include <list>
 
+/*!
+ * \file
+ * \brief Ten plik zawiera definicję klasy Vektor
+ *
+ */
+
+/*!
+ *  \brief Szablon klasy wektor.
+ * 
+ *  Jest on tablicą wspolrzednych.
+ *
+ */
+template <int SIZE>
 class Vector {
 
 private:
 
-    double size[SIZE];     //Tablica wektora
+    double wspolrzedne[SIZE];     //Tablica wektora
 
 public:
 
+    static unsigned int AktywneWektory;
+    static unsigned int PowstaleWektory;
+
     Vector();
+
+    ~Vector();
 
     Vector(double [SIZE]);
 
-    Vector operator + (const Vector &v);
+    Vector<SIZE> operator + (const Vector<SIZE> &v);
 
-    Vector operator - (const Vector &v);
+    Vector<SIZE> operator - (const Vector<SIZE> &v);
 
-    Vector operator * (const double &tmp);
+    Vector<SIZE> operator * (const double &tmp);
 
-    Vector operator / (const double &tmp);
+    Vector<SIZE> operator / (const double &tmp);
 
     const double &operator [] (int index) const;
 
+    void zapeln(double argu[SIZE]);
+
+    double modul();
+
     double &operator [] (int index);
 
+  static int daj_aktywne() { return AktywneWektory; };
+  static int daj_powstale() { return PowstaleWektory; };
+  static void zwieksz_aktywne() { ++AktywneWektory; };
+  static void zmniejsz_aktywne() { --AktywneWektory; };
+  static void zwieksz_powstale() { ++PowstaleWektory; };
+
 };
-
-std::ostream &operator << (std::ostream &out, Vector const &tmp);
-
-std::istream &operator >> (std::istream &in, Vector &tmp);
-
-/******************************************************************************
- |  Konstruktor klasy Vector.                                                 |
- |  Argumenty:                                                                |
- |      Brak argumentow.                                                      |
- |  Zwraca:                                                                   |
- |      Tablice wypelniona wartoscia 0.                                       |
+/*!
+ * \brief Przeciazenie operatora <<                                                  
+ *                                                                 
+ *      \param[in] out  strumien wejsciowy                                             
+ *      \param[in] tmp  wektor
  */
-Vector::Vector() {
+template <int SIZE>
+std::ostream &operator << (std::ostream &out, Vector<SIZE> const &tmp);
+
+template <int SIZE>
+unsigned int Vector<SIZE>::AktywneWektory = 0;
+
+template <int SIZE>
+unsigned int Vector<SIZE>::PowstaleWektory = 0;
+/*!
+ * \brief Przeciazenie operatora >>
+ *                                                                               
+ *      \param[in] in strumien wyjsciowy                                              
+ *      \param[in] tmp  wektor  
+ */
+template <int SIZE>
+std::istream &operator >> (std::istream &in, Vector<SIZE> &tmp);
+
+/*!
+ | \brief Konstruktor klasy Vector.      
+ */
+template <int SIZE>
+Vector<SIZE>::Vector() {
+    zwieksz_aktywne();
+    zwieksz_powstale();
     for (int i = 0; i < SIZE; ++i) {
-        size[i] = 0;
+        wspolrzedne[i] = 0;
     }
+}
+/*!
+ | \brief Destruktor klasy Vector.         
+*/
+template <int SIZE>
+Vector<SIZE>::~Vector() {
+    zmniejsz_aktywne();
 }
 
 
 /******************************************************************************
- |  Konstruktor klasy Vector.                                                 |
- |  Argumenty:                                                                |
- |      tmp - Jednowymiarowa tablica typu double.                             |
- |  Zwraca:                                                                   |
- |      Tablice wypelniona wartosciami podanymi w argumencie.                 |
+    \brief Konstruktor klasy Vector.                              
+                                                   
+    \param[in] tmp - Jednowymiarowa tablica typu double.               
+                                                            
+    \return Vektor wypelniony wartosciami podanymi w argumencie.     
  */
-
-Vector::Vector(double tmp[SIZE]) {
+template <int SIZE>
+Vector<SIZE>::Vector(double tmp[SIZE]) {
+    zwieksz_aktywne();
+    zwieksz_powstale();
     for (int i = 0; i < SIZE; ++i) {
-        size[i] = tmp[i];
+        wspolrzedne[i] = tmp[i];
     }
 }
 
 
-/******************************************************************************
- |  Realizuje dodawanie dwoch wektorow.                                       |
- |  Argumenty:                                                                |
- |      this - pierwszy skladnik dodawania,                                   |
- |      v - drugi skladnik dodawania.                                         |
- |  Zwraca:                                                                   |
- |      Sume dwoch skladnikow przekazanych jako wskaznik                      |
- |      na parametr.                                                          |
+
+
+/*!
+ * \brief Oblicza sume wektorow
+ *                                                                  
+ *     \param[in] this Wektor 
+ *     \param[in] v Wektor                                                               
+ *                                                                     
+ *     \return Sume wektorow                                                                  
  */
-Vector Vector::operator + (const Vector &v) {
-    Vector result;
+template <int SIZE>
+Vector<SIZE> Vector<SIZE>::operator + (const Vector<SIZE> &v) {
+    Vector<SIZE> result;
     for (int i = 0; i < SIZE; ++i) {
-        result[i] = size[i] += v[i];
-    }
-    return result;
-}
-
-
-/******************************************************************************
- |  Realizuje odejmowanie dwoch wektorow.                                     |
- |  Argumenty:                                                                |
- |      this - pierwszy skladnik odejmowania,                                 |
- |      v - drugi skladnik odejmowania.                                       |
- |  Zwraca:                                                                   |
- |      Roznice dwoch skladnikow przekazanych jako wskaznik                   |
- |      na parametr.                                                          |
- */
-Vector Vector::operator - (const Vector &v) {
-    Vector result;
-    for (int i = 0; i < SIZE; ++i) {
-        result[i] = size[i] -= v[i];
-    }
-    return result;
-}
-
-
-/******************************************************************************
- |  Realizuje mnozenie wektora przez liczbe zmiennoprzecinkowa.               |
- |  Argumenty:                                                                |
- |      this - pierwszy skladnik mnozenia (wektor),                           |
- |      v - drugi skladnik mnozenia (liczba typu double).                     |
- |  Zwraca:                                                                   |
- |      Iloczyn dwoch skladnikow przekazanych jako wskaznik                   |
- |      na parametr.                                                          |
- */
-
-Vector Vector::operator * (const double &tmp) {
-    Vector result;
-    for (int i = 0; i < SIZE; ++i) {
-        result[i] = size[i] *= tmp;
+        result[i] = wspolrzedne[i] += v[i];
     }
     return result;
 }
 
 
-/******************************************************************************
- |  Realizuje dzielenie dwoch wektorow.                                       |
- |  Argumenty:                                                                |
- |      this - licznik dzielenia,                                             |
- |      v - mianownik dzielenia.                                              |
- |  Zwraca:                                                                   |
- |      Iloraz dwoch skladnikow przekazanych jako wskaznik                    |
- |      na parametr.                                                          |
+/*!
+ * \brief Oblicza roznice wektorow
+ *                                                                  
+ *     \param[in] this Wektor 
+ *     \param[in] v Wektor                                                               
+ *     \return Roznice wektorow                                                                  
  */
+template <int SIZE>
+Vector<SIZE> Vector<SIZE>::operator - (const Vector<SIZE> &v) {
+    Vector<SIZE> result;
+    for (int i = 0; i < SIZE; ++i) {
+        result[i] = wspolrzedne[i] -= v[i];
+    }
+    return result;
+}
 
-Vector Vector::operator / (const double &tmp) {
-    Vector result;
+
+/*!
+ * \brief Oblicza iloczyn wektorow
+ *                                                                  
+ *     \param[in] this Wektor 
+ *     \param[in] tmp Wektor                                                               
+ *                                                                     
+ *     \return iloczyn wektorow                                                                  
+ */
+template <int SIZE>
+Vector<SIZE> Vector<SIZE>::operator * (const double &tmp) {
+    Vector<SIZE> result;
+    for (int i = 0; i < SIZE; ++i) {
+        result[i] = wspolrzedne[i] *= tmp;
+    }
+    return result;
+}
+
+
+/*!
+ * \brief Oblicza iloczyn wektorow
+ *                                                                  
+ *     \param[in] Wektor                                                              
+ *     \param[in] tmp                                                               
+ *     \return Iloczyn wektora przez stala                                                                 
+ */
+template <int SIZE>
+Vector<SIZE> Vector<SIZE>::operator / (const double &tmp) {
+    Vector<SIZE> result;
 
     for (int i = 0; i < SIZE; ++i) {
-        result[i] = size[i] / tmp;
+        result[i] = wspolrzedne[i] / tmp;
     }
 
     return result;
@@ -145,11 +205,12 @@ Vector Vector::operator / (const double &tmp) {
  |  Zwraca:                                                                   |
  |      Wartosc wektora w danym miejscu tablicy jako stala.                   |
  */
-const double &Vector::operator [] (int index) const {
-    if (index < 0 || index >= SIZE) {
-        std::cerr << "Error: Wektor jest poza zasiegiem!" << std::endl;
-    } // lepiej byłoby rzucić wyjątkiem stdexcept
-    return size[index];
+template <int SIZE>
+const double &Vector<SIZE>::operator [] (int index) const {
+    
+        assert(index >= 0 && index < SIZE);
+    
+    return wspolrzedne[index];
 }
 
 
@@ -160,35 +221,63 @@ const double &Vector::operator [] (int index) const {
  |  Zwraca:                                                                   |
  |      Wartosc wektora w danym miejscu tablicy.                              |
  */
-double &Vector::operator[](int index) {
-    return const_cast<double &>(const_cast<const Vector *>(this)->operator[](index));
+template <int SIZE>
+double &Vector<SIZE>::operator[](int index) {
+    return const_cast<double &>(const_cast<const Vector<SIZE> *>(this)->operator[](index));
 }
 
 
-/******************************************************************************
- |  Przeciazenie operatora <<                                                 |
- |  Argumenty:                                                                |
- |      out - strumien wejsciowy,                                             |
- |      tmp - wektor.                                                         |
- */
-std::ostream &operator << (std::ostream &out, Vector const &tmp) {
-    for (int i = 0; i < SIZE; ++i) {
-        out << "[ " << tmp[i] << " ]\n";
+template <int SIZE>
+std::ostream &operator << (std::ostream &out, Vector<SIZE> const &tmp) {
+  for (int index = 0; index < SIZE; index++)
+  {
+    out << tmp[index] << " ";
+    if (index == SIZE)
+    {
+      out << tmp[index] << std::endl;
+      return out;
     }
-    return out;
+  }
+  return out;
 }
 
 
-/******************************************************************************
- |  Przeciazenie operatora >>                                                 |
- |  Argumenty:                                                                |
- |      in - strumien wyjsciowy,                                              |
- |      tmp - wektor.                                                         |
- */
-std::istream &operator >> (std::istream &in, Vector &tmp) {
+template <int SIZE>
+std::istream &operator >> (std::istream &in, Vector<SIZE> &tmp) {
+    tmp.zwieksz_aktywne();
     for (int i = 0; i < SIZE; ++i) {
         in >> tmp[i];
     }
     std::cout << std::endl;
     return in;
+}
+
+/*!
+ * \brief Zapelnia wektor tablica typu T
+ *                                                                                                                                   
+ */
+template <int SIZE>
+void Vector<SIZE>::zapeln(double argu[SIZE])
+{
+    for (unsigned int i = 0; i < SIZE; i++)
+    {
+       wspolrzedne[i]=argu[i]; 
+    }
+}
+/*!
+ * \brief Oblicza modul
+ *                                                                  
+ *     \param[in] Wektor                                                               
+ *                                                                     
+ *     \return modul                                                                  
+ */
+template <int SIZE>
+double Vector<SIZE>::modul()
+{   
+    double tmp;
+    for(unsigned int i=0;i<SIZE;i++)
+    {
+        tmp+=(wspolrzedne[i] * wspolrzedne[i]);
+    }
+    return std::sqrt(tmp);
 }

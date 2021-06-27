@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga
+CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build
+CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/program.dir/depend.make
@@ -59,32 +59,144 @@ include CMakeFiles/program.dir/flags.make
 
 CMakeFiles/program.dir/src/example.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/example.cpp.o: ../src/example.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/program.dir/src/example.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/example.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/program.dir/src/example.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/example.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/example.cpp
 
 CMakeFiles/program.dir/src/example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/example.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/example.cpp > CMakeFiles/program.dir/src/example.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/example.cpp > CMakeFiles/program.dir/src/example.cpp.i
 
 CMakeFiles/program.dir/src/example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/example.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/example.cpp -o CMakeFiles/program.dir/src/example.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/example.cpp -o CMakeFiles/program.dir/src/example.cpp.s
 
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../src/lacze_do_gnuplota.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/lacze_do_gnuplota.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp
 
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/lacze_do_gnuplota.cpp > CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp > CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.i
 
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src/lacze_do_gnuplota.cpp -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.s
+
+CMakeFiles/program.dir/src/brylageo.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/brylageo.cpp.o: ../src/brylageo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/program.dir/src/brylageo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/brylageo.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp
+
+CMakeFiles/program.dir/src/brylageo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/brylageo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp > CMakeFiles/program.dir/src/brylageo.cpp.i
+
+CMakeFiles/program.dir/src/brylageo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/brylageo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp -o CMakeFiles/program.dir/src/brylageo.cpp.s
+
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../src/prostopadloscian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/program.dir/src/prostopadloscian.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/prostopadloscian.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp
+
+CMakeFiles/program.dir/src/prostopadloscian.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/prostopadloscian.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp > CMakeFiles/program.dir/src/prostopadloscian.cpp.i
+
+CMakeFiles/program.dir/src/prostopadloscian.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/prostopadloscian.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp -o CMakeFiles/program.dir/src/prostopadloscian.cpp.s
+
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../src/graniastoslup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/program.dir/src/graniastoslup.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/graniastoslup.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp
+
+CMakeFiles/program.dir/src/graniastoslup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/graniastoslup.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp > CMakeFiles/program.dir/src/graniastoslup.cpp.i
+
+CMakeFiles/program.dir/src/graniastoslup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/graniastoslup.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp -o CMakeFiles/program.dir/src/graniastoslup.cpp.s
+
+CMakeFiles/program.dir/src/dron.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/dron.cpp.o: ../src/dron.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/program.dir/src/dron.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/dron.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/dron.cpp
+
+CMakeFiles/program.dir/src/dron.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/dron.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/dron.cpp > CMakeFiles/program.dir/src/dron.cpp.i
+
+CMakeFiles/program.dir/src/dron.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/dron.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/dron.cpp -o CMakeFiles/program.dir/src/dron.cpp.s
+
+CMakeFiles/program.dir/src/stozek.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/stozek.cpp.o: ../src/stozek.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/program.dir/src/stozek.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/stozek.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/stozek.cpp
+
+CMakeFiles/program.dir/src/stozek.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/stozek.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/stozek.cpp > CMakeFiles/program.dir/src/stozek.cpp.i
+
+CMakeFiles/program.dir/src/stozek.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/stozek.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/stozek.cpp -o CMakeFiles/program.dir/src/stozek.cpp.s
+
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../src/gran_bryla.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/program.dir/src/gran_bryla.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/gran_bryla.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/gran_bryla.cpp
+
+CMakeFiles/program.dir/src/gran_bryla.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/gran_bryla.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/gran_bryla.cpp > CMakeFiles/program.dir/src/gran_bryla.cpp.i
+
+CMakeFiles/program.dir/src/gran_bryla.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/gran_bryla.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/gran_bryla.cpp -o CMakeFiles/program.dir/src/gran_bryla.cpp.s
+
+CMakeFiles/program.dir/src/wyzyna.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../src/wyzyna.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/program.dir/src/wyzyna.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/wyzyna.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/wyzyna.cpp
+
+CMakeFiles/program.dir/src/wyzyna.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/wyzyna.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/wyzyna.cpp > CMakeFiles/program.dir/src/wyzyna.cpp.i
+
+CMakeFiles/program.dir/src/wyzyna.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/wyzyna.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/wyzyna.cpp -o CMakeFiles/program.dir/src/wyzyna.cpp.s
+
+CMakeFiles/program.dir/src/scena.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/scena.cpp.o: ../src/scena.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/program.dir/src/scena.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/scena.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/scena.cpp
+
+CMakeFiles/program.dir/src/scena.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/scena.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/scena.cpp > CMakeFiles/program.dir/src/scena.cpp.i
+
+CMakeFiles/program.dir/src/scena.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/scena.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/scena.cpp -o CMakeFiles/program.dir/src/scena.cpp.s
 
 program: CMakeFiles/program.dir/src/example.cpp.o
 program: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
+program: CMakeFiles/program.dir/src/brylageo.cpp.o
+program: CMakeFiles/program.dir/src/prostopadloscian.cpp.o
+program: CMakeFiles/program.dir/src/graniastoslup.cpp.o
+program: CMakeFiles/program.dir/src/dron.cpp.o
+program: CMakeFiles/program.dir/src/stozek.cpp.o
+program: CMakeFiles/program.dir/src/gran_bryla.cpp.o
+program: CMakeFiles/program.dir/src/wyzyna.cpp.o
+program: CMakeFiles/program.dir/src/scena.cpp.o
 program: CMakeFiles/program.dir/build.make
 
 .PHONY : program
@@ -99,6 +211,6 @@ CMakeFiles/program.dir/clean:
 .PHONY : CMakeFiles/program.dir/clean
 
 CMakeFiles/program.dir/depend:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krystian/Documents/objektowo/zad5_3-KrystianCyga /home/krystian/Documents/objektowo/zad5_3-KrystianCyga /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krystian/Documents/objektowo/zad5_2-KrystianCyga /home/krystian/Documents/objektowo/zad5_2-KrystianCyga /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/program.dir/depend
 

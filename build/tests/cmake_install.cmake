@@ -1,4 +1,4 @@
-# Install script for directory: /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/tests
+# Install script for directory: /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

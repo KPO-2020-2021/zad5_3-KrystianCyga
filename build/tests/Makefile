@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga
+CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build
+CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/tests/CMakeFiles/progress.marks
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles 0
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/tests/CMakeFiles/progress.marks
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/fulltest.dir/rule:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fulltest.dir/rule
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fulltest.dir/rule
 .PHONY : tests/CMakeFiles/fulltest.dir/rule
 
 # Convenience name for target.
@@ -133,12 +133,12 @@ fulltest: tests/CMakeFiles/fulltest.dir/rule
 
 # fast build rule for target.
 fulltest/fast:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/fulltest.dir/build.make tests/CMakeFiles/fulltest.dir/build
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/fulltest.dir/build.make tests/CMakeFiles/fulltest.dir/build
 .PHONY : fulltest/fast
 
 # Convenience name for target.
 tests/CMakeFiles/coverage.dir/rule:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/coverage.dir/rule
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/coverage.dir/rule
 .PHONY : tests/CMakeFiles/coverage.dir/rule
 
 # Convenience name for target.
@@ -148,12 +148,12 @@ coverage: tests/CMakeFiles/coverage.dir/rule
 
 # fast build rule for target.
 coverage/fast:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/coverage.dir/build.make tests/CMakeFiles/coverage.dir/build
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/coverage.dir/build.make tests/CMakeFiles/coverage.dir/build
 .PHONY : coverage/fast
 
 # Convenience name for target.
 tests/CMakeFiles/unit_tests.dir/rule:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests.dir/rule
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests.dir/rule
 .PHONY : tests/CMakeFiles/unit_tests.dir/rule
 
 # Convenience name for target.
@@ -163,7 +163,7 @@ unit_tests: tests/CMakeFiles/unit_tests.dir/rule
 
 # fast build rule for target.
 unit_tests/fast:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
 .PHONY : unit_tests/fast
 
 dummy.o: dummy.cpp.o
@@ -172,7 +172,7 @@ dummy.o: dummy.cpp.o
 
 # target to build an object file
 dummy.cpp.o:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/dummy.cpp.o
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/dummy.cpp.o
 .PHONY : dummy.cpp.o
 
 dummy.i: dummy.cpp.i
@@ -181,7 +181,7 @@ dummy.i: dummy.cpp.i
 
 # target to preprocess a source file
 dummy.cpp.i:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/dummy.cpp.i
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/dummy.cpp.i
 .PHONY : dummy.cpp.i
 
 dummy.s: dummy.cpp.s
@@ -190,7 +190,7 @@ dummy.s: dummy.cpp.s
 
 # target to generate assembly for a file
 dummy.cpp.s:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/dummy.cpp.s
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/dummy.cpp.s
 .PHONY : dummy.cpp.s
 
 main.o: main.cpp.o
@@ -199,7 +199,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.o
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -208,7 +208,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.i
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -217,7 +217,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.s
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -249,6 +249,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

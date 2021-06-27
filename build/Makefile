@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga
+CMAKE_SOURCE_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build
+CMAKE_BINARY_DIR = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -590,6 +590,60 @@ app/main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/app/main.cpp.s
 .PHONY : app/main.cpp.s
 
+src/brylageo.o: src/brylageo.cpp.o
+
+.PHONY : src/brylageo.o
+
+# target to build an object file
+src/brylageo.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/brylageo.cpp.o
+.PHONY : src/brylageo.cpp.o
+
+src/brylageo.i: src/brylageo.cpp.i
+
+.PHONY : src/brylageo.i
+
+# target to preprocess a source file
+src/brylageo.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/brylageo.cpp.i
+.PHONY : src/brylageo.cpp.i
+
+src/brylageo.s: src/brylageo.cpp.s
+
+.PHONY : src/brylageo.s
+
+# target to generate assembly for a file
+src/brylageo.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/brylageo.cpp.s
+.PHONY : src/brylageo.cpp.s
+
+src/dron.o: src/dron.cpp.o
+
+.PHONY : src/dron.o
+
+# target to build an object file
+src/dron.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/dron.cpp.o
+.PHONY : src/dron.cpp.o
+
+src/dron.i: src/dron.cpp.i
+
+.PHONY : src/dron.i
+
+# target to preprocess a source file
+src/dron.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/dron.cpp.i
+.PHONY : src/dron.cpp.i
+
+src/dron.s: src/dron.cpp.s
+
+.PHONY : src/dron.s
+
+# target to generate assembly for a file
+src/dron.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/dron.cpp.s
+.PHONY : src/dron.cpp.s
+
 src/example.o: src/example.cpp.o
 
 .PHONY : src/example.o
@@ -617,6 +671,60 @@ src/example.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/example.cpp.s
 .PHONY : src/example.cpp.s
 
+src/gran_bryla.o: src/gran_bryla.cpp.o
+
+.PHONY : src/gran_bryla.o
+
+# target to build an object file
+src/gran_bryla.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/gran_bryla.cpp.o
+.PHONY : src/gran_bryla.cpp.o
+
+src/gran_bryla.i: src/gran_bryla.cpp.i
+
+.PHONY : src/gran_bryla.i
+
+# target to preprocess a source file
+src/gran_bryla.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/gran_bryla.cpp.i
+.PHONY : src/gran_bryla.cpp.i
+
+src/gran_bryla.s: src/gran_bryla.cpp.s
+
+.PHONY : src/gran_bryla.s
+
+# target to generate assembly for a file
+src/gran_bryla.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/gran_bryla.cpp.s
+.PHONY : src/gran_bryla.cpp.s
+
+src/graniastoslup.o: src/graniastoslup.cpp.o
+
+.PHONY : src/graniastoslup.o
+
+# target to build an object file
+src/graniastoslup.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/graniastoslup.cpp.o
+.PHONY : src/graniastoslup.cpp.o
+
+src/graniastoslup.i: src/graniastoslup.cpp.i
+
+.PHONY : src/graniastoslup.i
+
+# target to preprocess a source file
+src/graniastoslup.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/graniastoslup.cpp.i
+.PHONY : src/graniastoslup.cpp.i
+
+src/graniastoslup.s: src/graniastoslup.cpp.s
+
+.PHONY : src/graniastoslup.s
+
+# target to generate assembly for a file
+src/graniastoslup.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/graniastoslup.cpp.s
+.PHONY : src/graniastoslup.cpp.s
+
 src/lacze_do_gnuplota.o: src/lacze_do_gnuplota.cpp.o
 
 .PHONY : src/lacze_do_gnuplota.o
@@ -643,6 +751,114 @@ src/lacze_do_gnuplota.s: src/lacze_do_gnuplota.cpp.s
 src/lacze_do_gnuplota.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.s
 .PHONY : src/lacze_do_gnuplota.cpp.s
+
+src/prostopadloscian.o: src/prostopadloscian.cpp.o
+
+.PHONY : src/prostopadloscian.o
+
+# target to build an object file
+src/prostopadloscian.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.o
+.PHONY : src/prostopadloscian.cpp.o
+
+src/prostopadloscian.i: src/prostopadloscian.cpp.i
+
+.PHONY : src/prostopadloscian.i
+
+# target to preprocess a source file
+src/prostopadloscian.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.i
+.PHONY : src/prostopadloscian.cpp.i
+
+src/prostopadloscian.s: src/prostopadloscian.cpp.s
+
+.PHONY : src/prostopadloscian.s
+
+# target to generate assembly for a file
+src/prostopadloscian.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.s
+.PHONY : src/prostopadloscian.cpp.s
+
+src/scena.o: src/scena.cpp.o
+
+.PHONY : src/scena.o
+
+# target to build an object file
+src/scena.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.o
+.PHONY : src/scena.cpp.o
+
+src/scena.i: src/scena.cpp.i
+
+.PHONY : src/scena.i
+
+# target to preprocess a source file
+src/scena.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.i
+.PHONY : src/scena.cpp.i
+
+src/scena.s: src/scena.cpp.s
+
+.PHONY : src/scena.s
+
+# target to generate assembly for a file
+src/scena.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.s
+.PHONY : src/scena.cpp.s
+
+src/stozek.o: src/stozek.cpp.o
+
+.PHONY : src/stozek.o
+
+# target to build an object file
+src/stozek.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/stozek.cpp.o
+.PHONY : src/stozek.cpp.o
+
+src/stozek.i: src/stozek.cpp.i
+
+.PHONY : src/stozek.i
+
+# target to preprocess a source file
+src/stozek.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/stozek.cpp.i
+.PHONY : src/stozek.cpp.i
+
+src/stozek.s: src/stozek.cpp.s
+
+.PHONY : src/stozek.s
+
+# target to generate assembly for a file
+src/stozek.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/stozek.cpp.s
+.PHONY : src/stozek.cpp.s
+
+src/wyzyna.o: src/wyzyna.cpp.o
+
+.PHONY : src/wyzyna.o
+
+# target to build an object file
+src/wyzyna.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/wyzyna.cpp.o
+.PHONY : src/wyzyna.cpp.o
+
+src/wyzyna.i: src/wyzyna.cpp.i
+
+.PHONY : src/wyzyna.i
+
+# target to preprocess a source file
+src/wyzyna.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/wyzyna.cpp.i
+.PHONY : src/wyzyna.cpp.i
+
+src/wyzyna.s: src/wyzyna.cpp.s
+
+.PHONY : src/wyzyna.s
+
+# target to generate assembly for a file
+src/wyzyna.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/wyzyna.cpp.s
+.PHONY : src/wyzyna.cpp.s
 
 # Help Target
 help:
@@ -690,12 +906,36 @@ help:
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
+	@echo "... src/brylageo.o"
+	@echo "... src/brylageo.i"
+	@echo "... src/brylageo.s"
+	@echo "... src/dron.o"
+	@echo "... src/dron.i"
+	@echo "... src/dron.s"
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"
+	@echo "... src/gran_bryla.o"
+	@echo "... src/gran_bryla.i"
+	@echo "... src/gran_bryla.s"
+	@echo "... src/graniastoslup.o"
+	@echo "... src/graniastoslup.i"
+	@echo "... src/graniastoslup.s"
 	@echo "... src/lacze_do_gnuplota.o"
 	@echo "... src/lacze_do_gnuplota.i"
 	@echo "... src/lacze_do_gnuplota.s"
+	@echo "... src/prostopadloscian.o"
+	@echo "... src/prostopadloscian.i"
+	@echo "... src/prostopadloscian.s"
+	@echo "... src/scena.o"
+	@echo "... src/scena.i"
+	@echo "... src/scena.s"
+	@echo "... src/stozek.o"
+	@echo "... src/stozek.i"
+	@echo "... src/stozek.s"
+	@echo "... src/wyzyna.o"
+	@echo "... src/wyzyna.i"
+	@echo "... src/wyzyna.s"
 .PHONY : help
 
 

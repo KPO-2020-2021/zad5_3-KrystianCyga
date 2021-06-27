@@ -771,8 +771,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/README.md
-INPUT                  += /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/include/ /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/src
+INPUT = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/README.md
+INPUT                  += /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/include/ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src
 
 
 FILE_PATTERNS += *.md *.markdown
@@ -924,7 +924,7 @@ FILTER_SOURCE_PATTERNS =
 # (index.html). This can be useful if you have a project on for instance GitHub
 # and want to reuse the introduction page also for the doxygen output.
 
-USE_MDFILE_AS_MAINPAGE = /home/krystian/Documents/objektowo/zad5_3-KrystianCyga/README.md
+USE_MDFILE_AS_MAINPAGE = /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/README.md
 
 
 #---------------------------------------------------------------------------
