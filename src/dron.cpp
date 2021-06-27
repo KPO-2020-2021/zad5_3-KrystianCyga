@@ -47,7 +47,35 @@ bool Dron::ZbudujDrona()
   czy_aktywny = true;
   KatObrotuRotora_st += 15;
 
+  ustaw_wielkosc(PolozenieD);
+
   return true;
+}
+
+void Dron::ustaw_wielkosc(vector3d &tmp){
+  wielkosc[0][0]=tmp[0]-promien;
+  wielkosc[1][0]=tmp[0]-promien;
+  wielkosc[0][1]=tmp[1]-promien;
+  wielkosc[1][1]=tmp[1]-promien;
+
+}
+
+bool Dron::czy_koliduje(std::list<std::shared_ptr<Obiekt>> &tmpPrzeszkody){
+  std::shared_ptr<Obiekt> Przeszkoda;
+  vector3d PolObiektu;
+  vector3d WekDystans;
+  for (int size = tmpPrzeszkody.size(); size > 0; --size)
+  {
+    Przeszkoda = tmpPrzeszkody.back();
+    tmpPrzeszkody.pop_back();
+    vector3d wielkoscMin = Przeszkoda->daj_wielkosc(0);
+    vector3d wielkoscMax = Przeszkoda->daj_wielkosc(1);
+    vector3d tmpPolozenieDrona = Korpus.daj_trans();
+    if (tmpPolozenieDrona[0] < wielkoscMax[0] + promien && tmpPolozenieDrona[1] < wielkoscMax[1] + promien &&
+        tmpPolozenieDrona[0] > wielkoscMin[0] - promien && tmpPolozenieDrona[1] > wielkoscMin[1] - promien)
+      return true;
+  }
+  return false;
 }
 
 bool Dron::owektor(unsigned int numer_drona)
@@ -108,7 +136,7 @@ bool Dron::ZapiszTrase(int wysokosc, unsigned int odleglosc, double kat, PzG::La
   return !out.fail();
 }
 
-bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_drona, PzG::LaczeDoGNUPlota &Lacze)
+bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_drona,std::list<std::shared_ptr<Obiekt>> Przeszkody, PzG::LaczeDoGNUPlota &Lacze)
 {
   ZapiszTrase(Wysokosc, odleglosc, kat, Lacze);
   double pochylenie = 0;
@@ -154,6 +182,13 @@ bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_
     Lacze.Rysuj();
   }
   Popraw_Pozycje(KorekcjaPolozenia, KorekcjaKata, odleglosc);
+
+  if (czy_koliduje(Przeszkody))
+  {
+    std::cout << "Kolizja drona z Obiektem!!!" << std::endl;
+    Lacze.Rysuj();
+    return 2;
+  }
 
   std::cout << "Opadanie trwa... " << std::endl;
   for (; PolozenieD[2] >= 0; PolozenieD[2] -= 2)

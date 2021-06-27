@@ -36,7 +36,7 @@ public:
   bool ZbudujDrona();
 
   Dron(): Obiekt(){};
-  bool czy_kolioduje(std::list<std::shared_ptr<Obiekt>> &tmpPrzeszkody);
+  bool czy_koliduje(std::list<std::shared_ptr<Obiekt>> &tmpPrzeszkody);
   void ustaw_wielkosc(vector3d &tmp);
   vector3d daj_wielkosc(int index){return wielkosc[index];};
   vector3d daj_polozenie() { return PolozenieD; };
@@ -81,7 +81,7 @@ public:
  *  \retval false - gdy operacja sie nie powiedzie
  * 
  */
-  bool LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_drona, PzG::LaczeDoGNUPlota &Lacze);
+  bool LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_drona,std::list<std::shared_ptr<Obiekt>> Przeszkody, PzG::LaczeDoGNUPlota &Lacze);
   /*!
   * \brief oblicza glugosc lotu
   *

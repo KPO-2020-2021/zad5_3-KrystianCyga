@@ -35,7 +35,7 @@ public:
     virtual std::string dajNazweWzorcowego() { return NazwaWyjsciowego; };
 
     virtual void ustaw_wielkosc();
-    virtual vector3d daj_wielkosc();
+    virtual vector3d daj_wielkosc(int index);
     virtual bool czy_koliduje(std::list<std::shared_ptr<Obiekt>> Przeszkody);
     
 };

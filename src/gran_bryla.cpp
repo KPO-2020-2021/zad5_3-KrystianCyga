@@ -49,6 +49,7 @@ bool gran_bryla::Tworz_gran_bryla(){
       }
       skaluj(PomVek);
       TransformujWspolrzednePunktu(PomVek);
+      ustaw_wielkosc(PomVek);
       OUT << PomVek;
       IN >> PomVek;
       OUT << std::endl;

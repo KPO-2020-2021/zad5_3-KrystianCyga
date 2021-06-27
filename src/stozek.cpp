@@ -49,6 +49,7 @@ bool stozek::Zbudujstozek()
             }
             skaluj(PomVek);
             TransformujWspolrzednePunktu(PomVek);
+            ustaw_wielkosc(PomVek);
             OUT << PomVek;
             IN >> PomVek;
             OUT << std::endl;
